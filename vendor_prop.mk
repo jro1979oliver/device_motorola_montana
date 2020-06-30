@@ -21,5 +21,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.sensors=montana
 
 # Zygote preforking
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.device_config.runtime_native.usap_pool_enabled=true

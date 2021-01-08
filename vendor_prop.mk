@@ -17,6 +17,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610
 
+# Iorap
+# Enable iorapd perfetto tracing for app starts
+PRODUCT_PROPERTY_OVERRIDES += \
+    iorapd.perfetto.enable=true
+
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.sensors=montana

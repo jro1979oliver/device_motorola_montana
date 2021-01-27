@@ -26,6 +26,9 @@ TARGET_CUSTOM_DTBTOOL := dtbTool_custom
 BOARD_DTBTOOL_ARGS := --force-v3 --motorola 1
 TARGET_KERNEL_CONFIG := montana_defconfig
 
+# Lineage hardware
+JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(DEVICE_PATH)/lineagehw|**/*.java
+
 # NFC
 NXP_CHIP_TYPE := pn554
 ODM_MANIFEST_SKUS += n

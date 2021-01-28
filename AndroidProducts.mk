@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_montana.mk
+    $(LOCAL_DIR)/arrow_montana.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_montana-user \
-    lineage_montana-userdebug \
-    lineage_montana-eng
+    arrow_montana-user \
+    arrow_montana-userdebug \
+    arrow_montana-eng

@@ -45,3 +45,7 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # Inherit from the proprietary version
 include vendor/motorola/montana/BoardConfigVendor.mk
+
+# Remove AICP LiveWallpaper
+EXCLUDE_LIVE_WALLPAPER := true
+

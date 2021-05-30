@@ -10,11 +10,11 @@ $(call inherit-product, device/motorola/montana/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common aicp stuff.
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_montana
+PRODUCT_NAME := aicp_montana
 PRODUCT_DEVICE := montana
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := Moto G (5S)

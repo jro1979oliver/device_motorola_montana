@@ -10,15 +10,22 @@ $(call inherit-product, device/motorola/montana/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Pixel Experience stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_montana
+PRODUCT_NAME := aosp_montana
 PRODUCT_DEVICE := montana
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := Moto G (5S)
 PRODUCT_MANUFACTURER := motorola
+
+#PE Props
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="montana_retail-user 8.1.0 OPPS28.65-37-7-12 073f74 release-keys" \
